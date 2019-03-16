@@ -24,12 +24,15 @@ public class Menu {
             switch (in.nextInt()) {
                 case 1:
                     System.out.println("Wybrałeś opcje 1");
+                    AutoSale.addingCar();
                     break;
                 case 2:
                     System.out.println("Wybrałeś opcje 2");
+                    AutoSale.showListOfCars();
                     break;
                 case 3:
                     System.out.println("Wybrałeś opcje 3");
+                    AutoSale.removeCar(in.nextInt());
                     break;
                 case 4:
                     System.out.println("Bye bye");

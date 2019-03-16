@@ -13,7 +13,7 @@ public class AutoSale {
 
     public static List<Car> cars = new ArrayList<Car>();
 
-    public void addingCar() {
+    public static void addingCar() {
         Scanner userScanner = new Scanner(System.in);
         System.out.println("Podaj parametry samochodu");
 
