@@ -44,10 +44,35 @@ public class AutoSale {
     }
 
     public static void showListOfCars() {
-        for (Car car:cars) {
-           StringBuilder lists = new StringBuilder();
+        for (int i = 0; i <cars.size(); i++) {
+
+            Car car = cars.get(i);
+
+            StringBuilder lists = new StringBuilder();
+            lists.append(car.getBrand());
+            lists.append(" ");
+            lists.append(car.getDoors());
+            lists.append(" ");
+            lists.append(car.getMaxSpeed());
+            lists.append(" ");
+            lists.append(car.getColor());
+            lists.append(" ");
+            lists.append(car.getDate());
+            lists.append(" ");
+            lists.append(car.getMileage());
+            lists.append(" ");
+            lists.append(car.getPrice());
+            lists.append(" ");
+
+            System.out.println(lists);
 
         }
+
+    }
+
+    public static void removeCar(int index) {
+        cars.remove(index);
+
 
     }
 
