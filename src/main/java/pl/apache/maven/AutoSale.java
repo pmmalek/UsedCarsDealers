@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class AutoSale {
 
-    public List<Car> cars = new ArrayList<Car>();
+    public static List<Car> cars = new ArrayList<Car>();
 
     public void addingCar() {
         Scanner userScanner = new Scanner(System.in);
@@ -40,6 +40,14 @@ public class AutoSale {
 
         Car car = new Car(name, color, doors, price, mileage, data, maxSpeed);
 
+        cars.add(car);
+    }
+
+    public static void showListOfCars() {
+        for (Car car:cars) {
+           StringBuilder lists = new StringBuilder();
+
+        }
 
     }
 
