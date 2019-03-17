@@ -1,8 +1,9 @@
 package pl.apache.maven;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Car {
+public class Car implements Serializable {
 
     private String brand;
 

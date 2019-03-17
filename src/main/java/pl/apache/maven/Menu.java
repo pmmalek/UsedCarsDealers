@@ -9,7 +9,7 @@ public class Menu {
     public static void displayMenu() {
         System.out.println(" Witaj w aplikacji Diler Samochodowy");
         System.out.println(" Co chcesz zrobić");
-        System.out.println(" 1 - dodać nowy samochód\n 2 - wyświetlić listę dodanych samochodów\n 3 - usunąć samochód");
+        System.out.println(" 1 - dodać nowy samochód\n 2 - wyświetlić listę dodanych samochodów\n 3 - usunąć samochód\n 4 - wyjście");
         System.out.print(" Selekcja: ");
     }
 

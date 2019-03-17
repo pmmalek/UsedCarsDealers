@@ -11,14 +11,13 @@ public class ReadingFile {
 
             for (Car car : AutoSale.cars) {
                 o.writeObject(car);
-                o.writeObject(car);
             }
             o.close();
             f.close();
         } catch (FileNotFoundException e) {
             System.out.println("Brak pliku ");
         } catch (IOException e) {
-            System.out.println("Błąd ");
+            e.printStackTrace();
         }
 
     }
@@ -29,7 +28,6 @@ public class ReadingFile {
             ObjectInputStream oi = new ObjectInputStream(fi);
 
             for (Car car : AutoSale.cars) {
-                oi.readObject();
                 oi.readObject();
             }
 
