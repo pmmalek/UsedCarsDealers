@@ -9,8 +9,10 @@ public class Menu {
     public static void displayMenu() {
         System.out.println(" Witaj w aplikacji Diler Samochodowy");
         System.out.println(" Co chcesz zrobić");
-        System.out.println(" 1 - dodać nowy samochód\n 2 - wyświetlić listę dodanych samochodów\n 3 - usunąć samochód\n 4 - wyjście");
+        System.out.println(" 1 - dodać nowy samochód\n 2 - wyświetlić listę dodanych samochodów\n 3 - usunąć samochód\n 4 - sortuj samochody\n 5 - wyjście");
         System.out.print(" Selekcja: ");
+        System.out.println();
+
     }
 
 
@@ -36,6 +38,10 @@ public class Menu {
                     AutoSale.removeCar(in.nextInt());
                     break;
                 case 4:
+                    System.out.println("Wybrałeś opcje 4");
+                    SubMenu.subMenu();
+                    break;
+                case 5:
                     System.out.println("Bye bye");
                     ReadingFile.fileOutPut();
                     state=false;
@@ -50,6 +56,7 @@ public class Menu {
 
     public static void main(String[] args) {
         ReadingFile.fileInput();
+
         main();
     }
 }

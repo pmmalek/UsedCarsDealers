@@ -9,7 +9,7 @@ public class SubMenu {
     public static void subMenu() {
         System.out.println(" Sortuj po ");
         System.out.println(" 1 - marka\n 2 - kolor\n 3 - liczba drzwi\n 4 - cena\n 5 - przebieg\n 6 - rocznik\n 7 - prędkość maksymalna");
-
+        main();
     }
     public static void main() {
 
@@ -18,7 +18,6 @@ public class SubMenu {
         boolean state = true;
         while (state) {
 
-            subMenu();
             switch (in.nextInt()) {
                 case 1:
                     System.out.println("Wybierz markę");
@@ -56,8 +55,7 @@ public class SubMenu {
 
     }
 
-    public static void main(String[] args) {
-        main();
+
     }
-}
+
 
