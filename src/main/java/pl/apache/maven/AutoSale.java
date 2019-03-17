@@ -49,20 +49,27 @@ public class AutoSale {
             Car car = cars.get(i);
 
             StringBuilder lists = new StringBuilder();
+            lists.append("Marka: ");
             lists.append(car.getBrand());
             lists.append(" ");
+            lists.append("Liczba drzwi: ");
             lists.append(car.getDoors());
             lists.append(" ");
+            lists.append("Prędkość maksymalna: ");
             lists.append(car.getMaxSpeed());
-            lists.append(" ");
+            lists.append("km/h ");
+            lists.append("Kolor: ");
             lists.append(car.getColor());
             lists.append(" ");
+            lists.append("Rok produkcji: ");
             lists.append(car.getDate());
             lists.append(" ");
+            lists.append("Przebieg: ");
             lists.append(car.getMileage());
-            lists.append(" ");
+            lists.append("km ");
+            lists.append("Cena: ");
             lists.append(car.getPrice());
-            lists.append(" ");
+            lists.append("zł ");
 
             System.out.println(lists);
 
