@@ -26,7 +26,6 @@ public class Menu {
                 case 1:
                     System.out.println("Wybrałeś opcje 1");
                     AutoSale.addingCar();
-//                    costam.add(car)
                     break;
                 case 2:
                     System.out.println("Wybrałeś opcje 2");
@@ -38,6 +37,7 @@ public class Menu {
                     break;
                 case 4:
                     System.out.println("Bye bye");
+                    ReadingFile.fileOutPut();
                     state=false;
                     break;
                 default:
@@ -49,6 +49,7 @@ public class Menu {
     }
 
     public static void main(String[] args) {
+        ReadingFile.fileInput();
         main();
     }
 }
