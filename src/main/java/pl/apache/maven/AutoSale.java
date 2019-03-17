@@ -49,6 +49,9 @@ public class AutoSale {
             Car car = cars.get(i);
 
             StringBuilder lists = new StringBuilder();
+            lists.append("Indeks: ");
+            lists.append(i);
+            lists.append(" ");
             lists.append("Marka: ");
             lists.append(car.getBrand());
             lists.append(" ");

@@ -13,6 +13,7 @@ public class Menu {
         System.out.print(" Selekcja: ");
     }
 
+
     public static void main() {
 
 
@@ -25,6 +26,7 @@ public class Menu {
                 case 1:
                     System.out.println("Wybrałeś opcje 1");
                     AutoSale.addingCar();
+//                    costam.add(car)
                     break;
                 case 2:
                     System.out.println("Wybrałeś opcje 2");
